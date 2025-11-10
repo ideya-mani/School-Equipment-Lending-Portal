@@ -38,4 +38,59 @@ A full-stack web application for managing school equipment lending built with Re
    ```bash
    git clone https://github.com/ideya-mani/School-Equipment-Lending-Portal.git
    cd school-equipment-portal 
-   
+
+
+MongoDB compass
+create collection name: equipment_lending
+
+Backend Setup
+
+# bash
+cd server
+npm install
+# Create .env file with:
+# MONGODB_URI=mongodb://localhost:27017/equipment_lending
+# JWT_SECRET=your_jwt_secret_key_here
+# PORT=5000
+npm run dev
+
+
+Frontend Setup
+
+# bash
+cd client
+npm install
+npm run dev
+Access the Application
+
+Frontend: http://localhost:3000
+
+Backend API: http://localhost:5000
+
+API Docs: http://localhost:5000/api-docs
+
+Default Login Credentials
+Admin: admin@school.edu / password123
+
+Staff: staff@school.edu / password123
+
+Student: student@school.edu / password123
+
+Project Structure
+
+school-equipment-portal/
+├── client/                 # React frontend
+│   ├── src/
+│   │   ├── components/     # Reusable components
+│   │   ├── pages/         # Page components
+│   │   ├── context/       # React context
+│   │   └── services/      # API services
+└── server/                # Node.js backend
+    ├── models/            # MongoDB models
+    ├── routes/            # API routes
+    ├── middleware/        # Custom middleware
+    └── scripts/           # Database scripts
+
+
+API Documentation
+Swagger documentation available at: http://localhost:5000/api-docs
