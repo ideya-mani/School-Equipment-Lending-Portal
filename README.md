@@ -37,4 +37,5 @@ A full-stack web application for managing school equipment lending built with Re
 1. **Clone the repository**
    ```bash
    git clone https://github.com/ideya-mani/School-Equipment-Lending-Portal.git
-   cd school-equipment-portal
+   cd school-equipment-portal 
+   
